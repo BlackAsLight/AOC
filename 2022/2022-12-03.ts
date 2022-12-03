@@ -1,6 +1,6 @@
 const priority = '_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-const rucksacks = (await Deno.readTextFile('./input.2022-12-03.txt'))
+const rucksacks = (await Deno.readTextFile('./inputs/2022-12-03.txt'))
 	.trim()
 	.split('\n')
 

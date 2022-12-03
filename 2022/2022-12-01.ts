@@ -1,4 +1,4 @@
-const elves = (await Deno.readTextFile("./input.2022-12-01.txt"))
+const elves = (await Deno.readTextFile("./inputs/2022-12-01.txt"))
 	.trim()
 	.split("\n")
 	.reduce((elves, line) => (line ? elves[ elves.length - 1 ] += parseInt(line) : elves.push(0), elves), [ 0 ])

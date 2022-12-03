@@ -19,7 +19,7 @@ const points: Record<string | number, number | string> = {
 	3: 'Scissors'
 }
 
-const lines = (await Deno.readTextFile('./input.2022-12-02.txt'))
+const lines = (await Deno.readTextFile('./inputs/2022-12-02.txt'))
 	.trim()
 	.split('\n')
 
