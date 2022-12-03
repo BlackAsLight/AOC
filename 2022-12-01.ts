@@ -1,0 +1,7 @@
+const elves = (await Deno.readTextFile("./input.2022-12-01.txt"))
+	.trim()
+	.split("\n")
+	.reduce((elves, line) => (line ? elves[ elves.length - 1 ] += parseInt(line) : elves.push(0), elves), [ 0 ])
+	.sort((x, y) => y - x)
+console.log(elves[ 0 ])
+console.log(elves.slice(0, 3).reduce((sum, elve) => sum + elve, 0))
